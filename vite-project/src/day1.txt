@@ -1,0 +1,38 @@
+virtual dom fibre concillation
+
+createRoot method=>dom create krta hai 
+maindom or apne dom ko compare krta hai or or jo chize ui pe reflect krti hai unko change krta hai
+pura dom repaint(reload)
+
+react behind the scene fibre algo hi use krti hai virtaul dom ko update krne k lia=>React fibre
+so basically ek uodate krne ja rhe ui meiin tb tk ek or update aa gya ui mein wo krhe tb tk ekn or update aa gya or thoda wait krke ek sath teeno update krdenge ui
+
+feature:
+1.pause,abort,reuse work or new updated comes in,the ability to assign priority to different type of updates 
+
+hydration is a process in which all ui button reflect but not javascript included where js include so its hydration comes into a picture
+
+Reconciliation algorithm:-ye ke aise algorithm hoti hai isme react use krta hai diff btwn bith the two tree one is actual browser wala tree and createRoot wala tree and determine which part need to be changed.It is also known as virtualDom. 
+
+update:-a change in data used to render a react app.like in the result of setcounter.it will basically rerender the whole ui
+
+diff of lists is performed completely using the keys .keys should be stable predictable and unique eg ek array hai use loop krke list mein lana hai
+fibre jo ek nayi algo likhi gyi thi usme agar list ki performance ko improve krna hai to keys a use krenge
+
+two based approach uses like push based or pull based ,pull based react apne ap decide krta hai hmare lia decision leta hai or push based main hm decision lete hai hme ye update abhii chaiye
+
+
+
+<div className="bg-slate-400">
+    <h1 className="text-sky-400/100">
+      Hello world!
+    </h1>
+      <h1>This is Jatin</h1>
+      {/* <h1>Counter Value: {count}</h1> */}
+      <h1>Counter Value: {counter}</h1>
+      <div className="flex w-max gap-4">
+      <Button className="text-sky-400/100" onClick={addValue}>Add Value</Button>
+      <br/>
+      <Button className="text-sky-400/100" onClick={subsValue}>Substract Value</Button>
+      </div>
+    </div>
