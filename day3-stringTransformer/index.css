@@ -1,0 +1,21 @@
+input{
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+.transformer-output{
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    position: relative;
+    background-color: beige;
+}
+
+.transformer-output label{
+    font-size: 0.75rem;
+    position: absolute;
+    left: 16px;
+    top: -6px;
+}
