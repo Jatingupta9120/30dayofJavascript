@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Talking to the outside World</h1>
-    <button onclick="getImages()">Get Random Image
-    </button>
-    <img src="" id="dogImage" alt="random dog"/>
+  </head>
+  <body>
+    <!-- <h1>Talking to the outside World</h1>
+    <button class="blocking-btn">Block Main Thread</button>
+    <button onclick="XMLHttpRequestss()">Get Random Image</button>
+    <img src="" id="dogImage" alt="random dog" /> -->
+
+
+    <h1>Non-blocking Task with Web Worker</h1>
+    <button class="start-btn">Start Heavy Task</button>
+    <p id="result">Result will appear here</p>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
